@@ -30,7 +30,8 @@ public class PredictionServiceImpl implements IPredictionService{
         System.out.println("model answer: " + response.getResult().getOutput().getContent());
         System.out.println("response.getResult(): " + response.getResult());
         System.out.println("response.getResult().getOutput()): " + response.getResult().getOutput());
-        return handleResponse(response.getResult().getOutput().getContent()); // TODO: check if the toString() function should be overloaded
+        return handleResponse(response.getResult().getOutput().getContent());
+        ; // TODO: check if the toString() function should be overloaded
     }
 
     private Map<String, Double> handleResponse(String response) {

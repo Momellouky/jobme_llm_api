@@ -2,7 +2,9 @@ package jobme.mellouky.jobme_llm_api.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
+import java.util.Map;
+
+
 public interface IPredictionService {
-    String predict(String userSkills);
+    Map<String, Double> predict(String userSkills);
 }
